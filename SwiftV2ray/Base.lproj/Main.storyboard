@@ -22,6 +22,7 @@
                         <outlet property="statusMenu" destination="gWk-ht-Ynu" id="VoY-Zp-Vk9"/>
                         <outlet property="updateGfwListMenuItem" destination="XTF-kG-avj" id="Nva-mW-ZrR"/>
                         <outlet property="updateV2rayMenuItem" destination="hLo-Qc-g8k" id="GkZ-q7-U6S"/>
+                        <outlet property="v2rayVersionMenuItem" destination="oTK-NV-GYe" id="xZV-p5-Qpt"/>
                     </connections>
                 </customObject>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
@@ -45,7 +46,7 @@
                                 <action selector="socks:" target="31n-P0-68E" id="Qis-TI-VOw"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Pac" enabled="NO" id="YpC-ni-2Zv" userLabel="Pac">
+                        <menuItem title="Pac(8080)" enabled="NO" id="YpC-ni-2Zv" userLabel="Pac">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="pac:" target="31n-P0-68E" id="dNI-Vp-OYn"/>
@@ -70,6 +71,9 @@
                             <connections>
                                 <action selector="settings:" target="31n-P0-68E" id="t23-30-X8K"/>
                             </connections>
+                        </menuItem>
+                        <menuItem title="V2rayCore" enabled="NO" id="oTK-NV-GYe">
+                            <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="BX2-Gt-wxV"/>
                         <menuItem title="Quit" keyEquivalent="q" id="CUk-8d-OG0">

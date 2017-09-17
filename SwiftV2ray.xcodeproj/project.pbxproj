@@ -2042,30 +2042,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5N3X3SSM45;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/oss_ios_demo",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SwiftV2ray Preference/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zc.SwiftV2ray-Preference";
@@ -2081,30 +2058,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5N3X3SSM45;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/feedback_ios_demo/YWFeedbackDemo/BCFeedback",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/httpdns_ios_demo",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mac_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/man_ios_demo/dependence",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/mpush_ios_swift_demo/mpush_ios_swift_demo/libs",
-					"$(PROJECT_DIR)/SwiftV2ray\\ Preference/alicloud-ios-demo/oss_ios_demo",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SwiftV2ray Preference/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zc.SwiftV2ray-Preference";

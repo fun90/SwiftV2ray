@@ -16,6 +16,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet weak var pacMenuItem: NSMenuItem!
     @IBOutlet weak var updateGfwListMenuItem: NSMenuItem!
     @IBOutlet weak var updateV2rayMenuItem: NSMenuItem!
+    @IBOutlet weak var v2rayVersionMenuItem: NSMenuItem!
     
     fileprivate let webServer: HttpServer = {
         let server = HttpServer()
@@ -31,6 +32,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     
     // MARK: - Public methods
     func launchInit() {
+        v2rayVersionMenuItem.title = "v2ray-\(Preference.default.v2rayVersion)"
         log.info("Get permission to setup network.")
         proxySetting.set(.none, success: {
             self.enableService(self.enableMenuItem)
@@ -97,7 +99,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         guard sender.state != 1 else {
             return
         }
-        proxySetting.set(.global(true, "localhost", kSocksPort),
+        proxySetting.set(.global(true, Preference.default.socksAddress, Preference.default.socksPort),
                          success: {
                             sender.state = 1
                             pacMenuItem.state = 0
@@ -148,6 +150,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
                 log.error(err)
             } else if self.enableMenuItem.state == 1 {
                 self.restartV2ray()
+                self.v2rayVersionMenuItem.title = "v2ray-\(Preference.default.v2rayVersion)"
             }
         }
     }

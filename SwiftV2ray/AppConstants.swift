@@ -38,9 +38,6 @@ let kPreferencePath: String = {
     Bundle.main.path(forResource: "Preference", ofType: "plist")!
 }()
 
-let kSocksAddress = "127.0.0.1"
-let kSocksPort = 1080
-
 let kPacServerPort = 8080
 
 let kKillV2rayScript = "ps -ef | grep v2ray | grep -v grep | awk '{print $2}' | xargs kill"
@@ -50,7 +47,6 @@ let kLaunchV2rayScript = "nohup \(kV2rayBinaryPath) -config \(kV2rayConfiguratio
 let kGFWListUrl = URL(string: "https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt")!
 
 let kV2rayReleaseUrl = URL(string: "https://api.github.com/repos/v2ray/v2ray-core/releases/latest")!
-let kV2rayVersion = "v2.37"
 
 
 

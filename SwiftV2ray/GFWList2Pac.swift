@@ -46,7 +46,9 @@ class Updater {
             log.error("Read master pac failed.")
             return false
         }
-        let socks5 = "\"SOCKS5 \(kSocksAddress):\(kSocksPort); SOCKS \(kSocksAddress):\(kSocksPort); DIRECT;\""
+        
+        let pref = Preference.default
+        let socks5 = "\"SOCKS5 \(pref.socksAddress):\(pref.socksPort); SOCKS \(pref.socksAddress):\(pref.socksPort); DIRECT;\""
         pac = pac.replacingOccurrences(of: "__DOMAINS__", with: domainJson)
         pac = pac.replacingOccurrences(of: "__PROXY__", with: socks5)
         

@@ -1,2 +1,2 @@
 # SwiftV2ray
-V2ray client on OS X
+Simple V2Ray gui client on OS X
