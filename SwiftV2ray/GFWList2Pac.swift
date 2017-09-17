@@ -18,11 +18,12 @@ class Updater {
         guard !updating else {
             return
         }
-        
+        log.info("Begin update gfwlist...")
         updating = true
         DispatchQueue.global().async {
             if self.fetchAndGenerate() {
                 success()
+                log.info("Update gfwlist success.")
             }
             self.updating = false
         }
@@ -134,7 +135,7 @@ extension Updater {
             return
         }
         updating = true
-        
+        log.info("Begin update v2ray core.")
         latestV2rayVersion { (success, version) in
             guard success else {
                 result(success, version)
@@ -149,6 +150,7 @@ extension Updater {
             self.downloadV2ray(version, result: { (success, errMsg) in
                 result(success, errMsg)
                 if success {
+                    log.info("Update v2ray core success.")
                     Preference.default.v2rayVersion = version
                 }
                 self.updating = false
