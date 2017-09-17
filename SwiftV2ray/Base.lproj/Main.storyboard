@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SwiftV2ray" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menuController" destination="31n-P0-68E" id="qOq-oS-CYv"/>
+                    </connections>
+                </customObject>
+                <customObject id="31n-P0-68E" customClass="StatusMenuController" customModule="SwiftV2ray" customModuleProvider="target">
+                    <connections>
+                        <outlet property="enableMenuItem" destination="82d-rs-x2M" id="jpV-zO-OaM"/>
+                        <outlet property="pacMenuItem" destination="YpC-ni-2Zv" id="8fL-pC-N3m"/>
+                        <outlet property="socksMenuItem" destination="MAY-jV-qJw" id="p5j-5n-mjh"/>
+                        <outlet property="statusMenu" destination="gWk-ht-Ynu" id="VoY-Zp-Vk9"/>
+                        <outlet property="updateGfwListMenuItem" destination="XTF-kG-avj" id="Nva-mW-ZrR"/>
+                        <outlet property="updateV2rayMenuItem" destination="hLo-Qc-g8k" id="GkZ-q7-U6S"/>
+                    </connections>
+                </customObject>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" autoenablesItems="NO" id="AYu-sK-qS6"/>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <menu autoenablesItems="NO" id="gWk-ht-Ynu">
+                    <items>
+                        <menuItem title="On" id="82d-rs-x2M" userLabel="Enable">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="enableService:" target="31n-P0-68E" id="wmY-aR-uNW"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="t4I-YA-lLr"/>
+                        <menuItem title="Socks" enabled="NO" id="MAY-jV-qJw" userLabel="Socks">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="socks:" target="31n-P0-68E" id="Qis-TI-VOw"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Pac" enabled="NO" id="YpC-ni-2Zv" userLabel="Pac">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="pac:" target="31n-P0-68E" id="dNI-Vp-OYn"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="Odv-Gd-dgY"/>
+                        <menuItem title="Update GFWList" enabled="NO" id="XTF-kG-avj">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="updateGFWList:" target="31n-P0-68E" id="Kfk-Dp-NMm"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Update V2rayCore" enabled="NO" id="hLo-Qc-g8k">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="updateV2ray:" target="31n-P0-68E" id="4uX-l6-fPZ"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="Qck-dn-esH"/>
+                        <menuItem title="Preference" id="IeO-bf-Xr1">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="settings:" target="31n-P0-68E" id="t23-30-X8K"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="BX2-Gt-wxV"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="CUk-8d-OG0">
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="bWR-oo-VMB"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="31n-P0-68E" id="sM9-CT-42q"/>
+                    </connections>
+                </menu>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

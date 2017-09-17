@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F92096356725B63E0E8817D348E1667F1AEEB539",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F92096356725B63E0E8817D348E1667F1AEEB539" : 9223372036854775807,
+    "2E1C2E978679E3B00435C6E5BD477026F5C6A6AA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3D284F73-1D8E-4BEC-B120-6F924591CF8A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F92096356725B63E0E8817D348E1667F1AEEB539" : "SwiftV2ray\/",
+    "2E1C2E978679E3B00435C6E5BD477026F5C6A6AA" : "SwiftV2ray\/SwiftV2ray%20Preference\/alicloud-ios-demo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftV2ray",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftV2ray.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alibaba\/alicloud-ios-demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2E1C2E978679E3B00435C6E5BD477026F5C6A6AA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:1oo1\/SwiftV2ray.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F92096356725B63E0E8817D348E1667F1AEEB539"
+    }
+  ]
+}

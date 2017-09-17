@@ -1,0 +1,142 @@
+{
+    "log": {
+        //loglevel: 错误日志的级别，可选的值为"debug"、"info"、"warning"、"error" 和 "none"
+        "loglevel": "none"
+        // ,
+        // "access": "./access.log",
+        // "error": "./error.log"
+    },
+    // "dns": {
+    //     "servers": [
+    //         "8.8.8.8",
+    //         "8.8.4.4",
+    //         "localhost"
+    //     ]
+    // },
+    "inbound": {
+        "port": 1080,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+            "auth": "noauth",
+            "udp": true,
+            "ip": "127.0.0.1"
+        }
+    },
+    "outbound": {
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "127.0.0.1",
+                    "port": 9090,
+                    "users": [
+                        {
+                            "id": "9bno6cde-a27b-4b98-ae70-798a0fea2e11",
+                            "alterId": 32
+                        }
+                    ]
+                }
+            ]
+        },
+        "mux": {
+            "enabled": true,
+            "concurrency": 8
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "connectionReuse": true,
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "www.baidu.com",
+                                "www.bing.com"
+                            ],
+                            "User-Agent": [
+                                "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                                "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    },
+                    "response": {
+                        "version": "1.1",
+                        "status": "200",
+                        "reason": "OK",
+                        "headers": {
+                            "Content-Type": [
+                                "application/octet-stream",
+                                "video/mpeg"
+                            ],
+                            "Transfer-Encoding": [
+                                "chunked"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "outboundDetour": [
+        {
+            "protocol": "freedom",
+            "settings": {},
+            "tag": "direct"
+        }
+    ],
+    "routing": {
+        "strategy": "rules",
+        "settings": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "type": "field",
+                    "port": "1-52",
+                    "outboundTag": "direct"
+                },
+                {
+                    "type": "field",
+                    "port": "54-79",
+                    "outboundTag": "direct"
+                },
+                {
+                    "type": "field",
+                    "port": "81-442",
+                    "outboundTag": "direct"
+                },
+                {
+                    "type": "field",
+                    "port": "444-65535",
+                    "outboundTag": "direct"
+                }
+                //,
+                //{
+                //    "type": "chinaip",
+                //    "outboundTag": "direct"
+                //},
+                //{
+                //    "type": "chinasites",
+                //    "outboundTag": "direct"
+                //}
+            ]
+        }
+    }
+}
