@@ -148,12 +148,12 @@ extension Updater {
                 return
             }
             self.downloadV2ray(version, result: { (success, errMsg) in
-                result(success, errMsg)
                 if success {
                     log.info("Update v2ray core success.")
                     Preference.default.v2rayVersion = version
                 }
                 self.updating = false
+                result(success, errMsg)
             })
         }
     }
