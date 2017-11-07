@@ -34,15 +34,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             log.setup(level: .info, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, fileLevel: .info)
         #endif
         
-        statusItem.button?.title = "V"
+        //statusItem.button?.title = "X"
         statusItem.menu = menuController.statusMenu
+        menuController.statusItem = statusItem
         menuController.launchInit()
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
         menuController.terminate()
     }
-    
-    
 }
 

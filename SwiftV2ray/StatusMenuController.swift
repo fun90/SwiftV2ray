@@ -17,6 +17,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet weak var updateGfwListMenuItem: NSMenuItem!
     @IBOutlet weak var updateV2rayMenuItem: NSMenuItem!
     @IBOutlet weak var v2rayVersionMenuItem: NSMenuItem!
+    @IBOutlet weak var statusItem: NSStatusItem!
     
     fileprivate let webServer: HttpServer = {
         let server = HttpServer()
@@ -55,11 +56,23 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         DistributedNotificationCenter.default().removeObserver(self)
     }
     
+    func changeStatusItemIcon(status: NSString) {
+        if (status .isEqual("on")) {
+            let icon = NSImage(named: "statusBarIcon")
+            statusItem.image = icon
+        } else {
+            let icon = NSImage(named: "statusBarIcon_disabled")
+            statusItem.image = icon
+            
+        }
+    }
+    
     // App 终止时关闭服务
     func terminate() {
         stopV2ray()
         webServer.stop()
         proxySetting.set(.none, success: {})
+        changeStatusItemIcon(status: "off")
     }
     
     // MARK: - Actions
@@ -85,6 +98,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         // On
         stopV2ray() // 防止多个执行
         startV2ray()
+        changeStatusItemIcon(status: "on")
         
         // 默认 pac
         if case ProxyType.global(_, _, _) = proxySetting.currentType {

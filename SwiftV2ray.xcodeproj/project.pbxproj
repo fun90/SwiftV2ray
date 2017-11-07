@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		24FAD8AC6848C5A201046882 /* Pods_SwiftV2ray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B478C137A30157891CEE8AD /* Pods_SwiftV2ray.framework */; };
+		2C04EEE51FB14804005D1D77 /* SwiftV2ray Preference.app in Resources */ = {isa = PBXBuildFile; fileRef = 59B254671F336B3300D7A179 /* SwiftV2ray Preference.app */; };
+		2C04EEF11FB1577A005D1D77 /* v2ray.sig in Resources */ = {isa = PBXBuildFile; fileRef = 2C04EEEF1FB1577A005D1D77 /* v2ray.sig */; };
+		2C04EEF21FB1577A005D1D77 /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = 2C04EEF01FB1577A005D1D77 /* geoip.dat */; };
 		59012E201F6D3C4A00581012 /* beautify-css.js in Resources */ = {isa = PBXBuildFile; fileRef = 59012E1D1F6D3C4A00581012 /* beautify-css.js */; };
 		59012E221F6D3C4A00581012 /* beautify.js in Resources */ = {isa = PBXBuildFile; fileRef = 59012E1F1F6D3C4A00581012 /* beautify.js */; };
 		590C5B771F308E2900461193 /* ProxySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C5B761F308E2900461193 /* ProxySetting.swift */; };
@@ -386,7 +389,6 @@
 		59B2546E1F336B3300D7A179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B2546D1F336B3300D7A179 /* Assets.xcassets */; };
 		59B254711F336B3300D7A179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B2546F1F336B3300D7A179 /* Main.storyboard */; };
 		59B254791F3374F200D7A179 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B254781F3374F200D7A179 /* StatusMenuController.swift */; };
-		59C644C71F6D6D2E008581E1 /* SwiftV2ray Preference.app in Resources */ = {isa = PBXBuildFile; fileRef = 59C644C61F6D6D2E008581E1 /* SwiftV2ray Preference.app */; };
 		59C644C91F6E0D09008581E1 /* Preference.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59C644C81F6E0D09008581E1 /* Preference.plist */; };
 		59C644CF1F6E0D6B008581E1 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C644CE1F6E0D6B008581E1 /* Preference.swift */; };
 		59E72E841F337B5A005DC25C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5917E1AE1EBB1AF5002F154E /* Main.storyboard */; };
@@ -396,6 +398,8 @@
 /* Begin PBXFileReference section */
 		12D4B33A3F405B203E8074CA /* Pods-SwiftV2ray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftV2ray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftV2ray/Pods-SwiftV2ray.debug.xcconfig"; sourceTree = "<group>"; };
 		1B478C137A30157891CEE8AD /* Pods_SwiftV2ray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftV2ray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C04EEEF1FB1577A005D1D77 /* v2ray.sig */ = {isa = PBXFileReference; lastKnownFileType = file; path = v2ray.sig; sourceTree = "<group>"; };
+		2C04EEF01FB1577A005D1D77 /* geoip.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geoip.dat; sourceTree = "<group>"; };
 		59012E1D1F6D3C4A00581012 /* beautify-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "beautify-css.js"; sourceTree = "<group>"; };
 		59012E1F1F6D3C4A00581012 /* beautify.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = beautify.js; sourceTree = "<group>"; };
 		590C5B761F308E2900461193 /* ProxySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySetting.swift; sourceTree = "<group>"; };
@@ -1242,6 +1246,8 @@
 		59704DE91F3726A0005BB1A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C04EEEF1FB1577A005D1D77 /* v2ray.sig */,
+				2C04EEF01FB1577A005D1D77 /* geoip.dat */,
 				59704DED1F372BA0005BB1A3 /* pac-master.pac */,
 				59704DE71F372698005BB1A3 /* domain.pac */,
 				597BC8B71F67F7C500E6B4FF /* config.json */,
@@ -1372,11 +1378,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C644C71F6D6D2E008581E1 /* SwiftV2ray Preference.app in Resources */,
+				2C04EEE51FB14804005D1D77 /* SwiftV2ray Preference.app in Resources */,
 				59C644C91F6E0D09008581E1 /* Preference.plist in Resources */,
+				2C04EEF11FB1577A005D1D77 /* v2ray.sig in Resources */,
 				591ECF5D1F3422A9007978EC /* v2ray in Resources */,
 				59704DE81F372698005BB1A3 /* domain.pac in Resources */,
 				5917E1AD1EBB1AF5002F154E /* Assets.xcassets in Resources */,
+				2C04EEF21FB1577A005D1D77 /* geoip.dat in Resources */,
 				5917E1B01EBB1AF5002F154E /* Main.storyboard in Resources */,
 				59704DEE1F372BA0005BB1A3 /* pac-master.pac in Resources */,
 				597BC8B81F67F7C500E6B4FF /* config.json in Resources */,
